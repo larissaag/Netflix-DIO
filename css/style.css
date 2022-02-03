@@ -1,0 +1,158 @@
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: #fff;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    color: var(--vermelho);
+    font-size: 40px;
+    font-family: "Arial Black";
+    margin-left: 5px;
+}
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    font-size: 15px;
+}
+header nav a:hover {
+    color: #fff;
+}
+.container {
+    margin-left: 30px;
+}
+.filme-principal .container {
+    width: 70%;
+}
+.filme-principal {
+    font-size: 25px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/capa-house.jpg);
+    height: 700px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.titulo {
+    margin-top: 15%;
+    font-size: 50px;
+    font-family: 'Trebuchet MS';
+}
+.descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    max-width: 70%;
+}
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #fff;
+    margin-right: 15px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao:hover {
+    background-color: #fff;
+    color: #000;
+}
+.botao i {
+    margin-right: 8px;
+}
+.box-series {
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.modal {
+    z-index:1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141414;
+    border-radius: 1rem;
+    width: 80%;
+    height: 60%;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0.25s ease-in-out , opacity 0.25s ease-in-out, transform 0.25s ease-in-out; 
+}
+.modal-content {
+    padding: 10px;
+
+}
+.close-button {
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #AAA;
+    width: 25px;
+    line-height: 25px;
+}
+.close-button:hover {
+    background-color: #888 ;
+}
+.modal-content i {
+    color: #fff;
+}
+.show-modal{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);    
+}
+@media (max-width: 768px) {
+    header .container {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .filme-principal .container {
+        width: 80%;
+    }
+    .filme-principal .titulo {
+        font-size: 150%;
+    }
+    .filme-principal .descricao {
+        font-size: 70%;
+    }
+    button {
+        margin-bottom: 5px;
+        width: 70%;
+    }
+}
+@media (max-width: 1024px) {
+    .filme-principal .container {
+        width: 80%;
+    }
+    .filme-principal .titulo {
+        font-size: 150%;
+    }
+    .filme-principal .descricao {
+        font-size: 70%;
+    }
+
+}

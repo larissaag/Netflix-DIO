@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+   
+    <title>NETFLIX CLONE</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Filmes</a>
+                <a href="#">Series</a>
+                <a href="#">Documentarios</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">HOUSE OF CARDS</h3>
+                <p class="descricao">Um político inescrupuloso não mede esforços para conquistar poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro.</p>
+                <div class="botoes">
+                        <button role="botao" class="botao" onclick="showModal()">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR
+                        </button>
+                        <button role="botao" class="botao" onclick="showModal()">
+                            <i class="fas fa-info-circle"></i>
+                            MAIS INFORMACÕES
+                        </button>
+                </div>
+            </div>
+        </div>
+        <div class="carrossel-series">
+            <div class="owl-carousel owl-theme">
+                    <div class="item"><img class="box-series" src="img/mini2.jpg" alt="peaky blinders poster"></div>
+                    <div class="item"><img class="box-series" src="img/mini3.jpg" alt="lucifer poster"></div>
+                    <div class="item"><img class="box-series" src="img/mini4.jpg" alt="a anatomia de grey poster"></div>
+                    <div class="item"><img class="box-series" src="img/mini5.jpg" alt="cobra kai poster"></div>
+                    <div class="item"><img class="box-series" src="img/mini6.jpg" alt="twd poster"></div>
+                    <div class="item"><img class="box-series" src="img/mini7.jpg" alt="round 6 poster"></div>
+                    <div class="item"><img class="box-series" src="img/mini8.jpg" alt="riverdale poster"></div>
+                    <div class="item"><img class="box-series" src="img/mini9.jpg" alt="sex education poster"></div>
+                    <div class="item"><img class="box-series" src="img/mini10.jpg" alt="rebelde poster"></div>
+            </div>
+        </div>
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal()">X</span>
+                    <div class="iframe">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/RWBFvQJQZn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div>
+    
+                        <p>
+                            2018 <i class="fas fa-ban"></i> 6 Temporadas
+                            <br>
+                            Com Frank fora da jogada, Claire Underwood pode exercer todo seu poder como a primeira presidente mulher dos Estados Unidos. Mas poderosos inimigos estão à espreita.</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
