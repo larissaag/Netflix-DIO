@@ -143,6 +143,9 @@ header nav a:hover {
         margin-bottom: 5px;
         width: 70%;
     }
+    iframe {
+        max-width: 15%;
+    }
 }
 @media (max-width: 1024px) {
     .filme-principal .container {
